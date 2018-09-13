@@ -5,7 +5,15 @@ var spicy = {
   meat: "Angus Beef",
   toppings: "Lettuce, Tomato, Onion",
   dressing: "Mayo, Siriracha",
-  price: 5.00
+  price: 12.95
+}
+
+var mild = {
+  name: "The Mild Burger",
+  meat: "Turkey",
+  toppings: "Lettuce, Tomato, Onion",
+  dressing: "Mayo, Mustard",
+  price: 10.95
 }
 
 //I am going to use a function called populate to place those items on the screen using innerHTML
@@ -15,4 +23,14 @@ function populate() {
   document.getElementById('burger1toppings').innerHTML = spicy.toppings;
   document.getElementById('burger1dressing').innerHTML = spicy.dressing;
   document.getElementById('burger1price').innerHTML = spicy.price;
+  
+ 
+}
+
+function yummy() {
+  document.getElementById('burger2name').innerHTML = mild.name;
+  document.getElementById('burger2meat').innerHTML = mild.meat;
+  document.getElementById('burger2toppings').innerHTML = mild.toppings;
+  document.getElementById('burger2dressing').innerHTML = mild.dressing;
+  document.getElementById('burger2price').innerHTML = mild.price;
 }

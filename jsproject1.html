@@ -6,13 +6,13 @@
        #firstBox {
        width: 300px;
        height: 250px;
-       background-color: orange;
+       background-color: #EC6834;
        }
         #secondBox {
        width: 300px;
        height: 250px;
-       background-color: blue;
-       transform: translate(150%,-100%);
+       background-color: #A8DCD0;
+       transform: translate(150%,-105%);
         }
        
      </style>
@@ -26,17 +26,36 @@
       <p id="burger1toppings"></p>
       <p id="burger1dressing"></p>
       <p id="burger1price"></p>
+       <button onlick="final()">Buy Mild</button>
+       <script>
+         
+       </script>
     </div>
    
     
     
     
-    <div id="secondBox"></div>
+    <div id="secondBox">
+      <p id="burger2name"></p>
+      <p id="burger2meat"></p>
+      <p id="burger2toppings"></p>
+      <p id="burger2dressing"></p>
+      <p id="burger2price"></p>
+      <button onlick="total()">Buy Spicy
+      <script>
+        function total() {
+        var tax = 4.712;
+        var b = 10.95 * tax;
+      </script>
+      </button>
+      
+    </div>
       
     
-   
+    
     <script>populate();</script>
-   
+    <script>yummy();</script>
+    
     
     
   </body>
