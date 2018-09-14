@@ -8,6 +8,19 @@ var spicy = {
   price: 12.95
 }
 
+
+function final1() {
+  var tax = 1.04712;
+  var a = (12.95 * tax).toFixed(2);
+  document.getElementById('burger1total').innerHTML =  "Your total is" + " " + a
+}
+
+function final2() {
+  var tax = 1.04712;
+  var b = (10.95 * tax).toFixed(2);
+  document.getElementById('burger2total').innerHTML = ("Your total is" + " " + b)
+}
+
 var mild = {
   name: "The Mild Burger",
   meat: "Turkey",
@@ -34,3 +47,4 @@ function yummy() {
   document.getElementById('burger2dressing').innerHTML = mild.dressing;
   document.getElementById('burger2price').innerHTML = mild.price;
 }
+
